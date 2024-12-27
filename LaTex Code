@@ -1,0 +1,334 @@
+Latex Code
+=========
+
+%-------------------------
+% Resume in Latex
+% Author : Devanarayanan M
+% Based off of: https://github.com/devanarayananm07/Resume
+%------------------------
+
+
+\documentclass[letterpaper,11pt]{article}
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage{fontawesome5}
+
+
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+
+\urlstyle{same}
+
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+     
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{document}
+
+
+%----------HEADING----------
+
+
+
+
+\begin{center}
+    {\Huge \scshape DEVANARAYANAN M} \\ \vspace{1pt}
+    Kottayam,Kerala \\ \vspace{1pt}
+    \small \href{tel:+91 9645756432}{ \raisebox{-0.1\height}\faPhone\ \underline{+91 9645756432} ~} \href{mailto:devanarayananm07@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{devanarayananm07@gmail.com}} ~
+    \href{https://linkedin.com/in/https:/https:/devanarayanan-m-5523b5218}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{LinkdIn}}  ~
+    \href{https://github.com/devanarayananm07}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}} ~
+     \href{https://www.overleaf.com/read/vmvdxbzmmvfy#8cdabf}{\raisebox{-0.2\height}\faFileCode\ \underline{Overleaf}} ~
+    \vspace{-8pt}
+\end{center}
+
+
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Mangalam College Of Engineering}{09 2023 -- 05 2025}
+      {Master Of Computer Applications - \textbf{CGPA} - \textbf{6.5}}{Ettumanoor, Kerala}
+  \resumeSubHeadingListEnd
+ 
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {St.Thomas College}{08 2018 -- 03 2022}
+      {B.Sc Botany - \textbf{Percentage} - \textbf{52\%}}{Pala, Kerala}
+  \resumeSubHeadingListEnd
+
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Data Structures \& Algorithms
+                \item Operating Systems
+                \item Computer Network
+                \item Database Management System (DBMS)
+               \item Data Science \& Machine Learning
+                \item OOPS Concept
+                \item Web Development
+                \item Android Development
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\href{https://github.com/devanarayananm07/ATS-Automated-Test-Scrutiny.git}{\textbf{\large{\underline{ATS-Automated Test Scrutiny}}} \href{https://github.com/devanarayananm07/ATS-Automated-Test-Scrutiny.git}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{PHP, Python, HTML, CSS}}}{11 2024}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed an innovative system that evaluates descriptive answers using Natural Language Processing (NLP). Designed and implemented the project using PHP for backend logic and HTML/CSS for a user-friendly front-end interface. This system ensures efficient, consistent, and unbiased grading of large volumes of test data.}}
+            \resumeItem{\textcolor{accent} {\href{https://github.com/devanarayananm07/ATS-Automated-Test-Scrutiny.git} {\underline{\normalsize{Code | Documentation}}}}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Amarakkattu Stores }{2021 -- 2023}
+      {\underline{Entrepreneur|Business Operations}}{Kumaranalloor, Kottayam}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Co-Founder|Sales|Marketing|Management}}
+        \resumeItem{Launched and managed day-to-day business operations, including overseeing sales, accounts, inventory management, leading to a strategic increase in sales and operational efficiency.}
+        \resumeItem{Built and maintained strong customer relationships, enhancing the store’s reputation and ensuring repeat business.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Darpans Travels }{2022 -- 2023}
+      {\underline{Part-Time Tour Planner|Digital Marketing Assistant}}{Kumaranalloor, Kottayam}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Part-Time Intern}}
+        \resumeItem{Generated and optimized itineraries for upcoming tours based on client data analysis and data management tools.}
+        \resumeItem{Collaborated with the marketing team to design and implement targeted campaigns on platforms like Facebook and Instagram, analyzing performance metrics to expand the company's reach across Kerala.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{Python, C, PHP, JavaScript, MySQL, MongoDB}} \\
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{VS Code, Android Studio, Intellij Idea Ultimate, Overleaf}} \\
+     \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ Linux, GitHub, Git}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+
+
+
+%-----------INVOLVEMENT---------------
+%-----------EXTRACURRICULAR-----------
+\section{EXTRACURRICULAR}
+    \resumeSubHeadingListStart
+
+        \resumeSubheading
+            {\href{https://drive.google.com/file/d/1vs-8r85N6M9EjqNHXDTkSTPkst_N72GQ/view?usp=drivesdk}{National Service Scheme \raisebox{-0.1\height}\faExternalLink}}{12 2016 -- 01 2017}
+            {\underline{NSS Volunteer}}{Kottayam}
+            \resumeItemListStart
+                \resumeItem{\normalsize{Actively participated in various community service activities, including clean-up drives, health awareness programs, and educational workshops.}}
+                
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {\href{https://drive.google.com/file/d/1vqyaQ2RXgGcmOzj_E8-Ovs1l2oaiNZBq/view?usp=drivesdk}{Intercollege Fest Cricket Certificate \raisebox{-0.1\height}\faExternalLink}}{03 2023}
+            {\underline{Saintgits College Of Engineering}}{Kottayam}
+            \resumeItemListStart
+                \resumeItem{\normalsize{Led the team in the intercollege cricket tournament, demonstrating exceptional leadership, teamwork, and sportsmanship. Successfully guided the team to a strong performance, resulting in a second-place finish.}}
+            \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{-11pt}
+
+ 
+%-----------CERTIFICATIONS-----------
+\section{CERTIFICATIONS}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://drive.google.com/file/d/1vnZO_7Stu7Fg-Dwkeq3Expjvl56ZHafz/view?usp=drivesdk}{Full Stack Development Using Python \raisebox{-0.1\height}\faExternalLink}}{02 2024 -- 03 2024}
+      {\underline{Facein Technologies PVT LTD}}{Ernakulam}
+      \resumeItemListStart
+        \resumeItem{Completed an intensive program focused on full stack development, covering front-end technologies (HTML, CSS, JavaScript) and back-end development using Python and Django framework. Enhanced skills in database management and deployment.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+
+
+
+
+\end{document}
